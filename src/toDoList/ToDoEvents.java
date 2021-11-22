@@ -1,25 +1,24 @@
 package toDoList;
 
-import Java2.ToDo;
 
 import java.util.ArrayList;
 
 public class ToDoEvents {
 
-    private ArrayList<Java2.ToDo> toDoList;
+    private ArrayList<ToDo> toDoList;
 
 
-    public ToDoEvents(ArrayList<Java2.ToDo> toDoList) {
+    public ToDoEvents(ArrayList<ToDo> toDoList) {
         this.toDoList = toDoList;
     }
 
     public void addToList(String activity, String date) {
-        Java2.ToDo toDo = new Java2.ToDo(activity, date);
+        ToDo toDo = new ToDo(activity, date);
         this.toDoList.add(toDo);
         toDo.print();
     }
     public void removeAllCompletedActivity( ) {
-        this.toDoList.removeIf(Java2.ToDo::isCompleted);
+        this.toDoList.removeIf(ToDo::isCompleted);
 
     }
     public void removeAnActivity(int number) {
@@ -28,7 +27,7 @@ public class ToDoEvents {
 
     public void viewAnActivityInList(String activity) {
         var test = true;
-        for (Java2.ToDo toDo : toDoList ) {
+        for (ToDo toDo : toDoList ) {
             if (toDo.getName().contains(activity)) {
                 System.out.print(toDoList.indexOf(toDo) + 1 + ". ");
                 toDo.print();
@@ -41,7 +40,7 @@ public class ToDoEvents {
 
     public void viewToDoList() {
         System.out.println("Lista: ");
-        for (Java2.ToDo toDo : toDoList) {
+        for (ToDo toDo : toDoList) {
             System.out.print(toDoList.indexOf(toDo) + 1 + ". ");
             toDo.print();
         }
