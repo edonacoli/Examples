@@ -1,4 +1,4 @@
-package Java1.ora5;
+package Detyra.detyra1;
 
 import java.util.Scanner;
 

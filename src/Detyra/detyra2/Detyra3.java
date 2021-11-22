@@ -1,4 +1,4 @@
-package Java1.ora6;
+package Detyra.detyra2;
 import java.util.Scanner;
 public class Detyra3 {
     public static void main(String[] args) {

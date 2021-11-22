@@ -1,6 +1,5 @@
-package Java1.ora5;
+package Detyra.detyra1;
 
-import java.lang.Math;
 import java.util.Random;
 import java.util.Scanner;
 
