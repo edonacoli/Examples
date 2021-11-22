@@ -1,8 +1,5 @@
 package toDoList;
 
-
-
-
 public class ToDo {
 
     private int id;

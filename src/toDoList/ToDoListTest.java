@@ -1,8 +1,7 @@
 package toDoList;
 
 
-import Java2.ToDo;
-import Java2.ToDoEvents;
+
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -16,7 +15,7 @@ public class ToDoListTest {
 
         Scanner sc = new Scanner(System.in);
         ArrayList<ToDo> toDoList = new ArrayList<>();
-        Java2.ToDoEvents t = new ToDoEvents(toDoList);
+        ToDoEvents t = new ToDoEvents(toDoList);
         int number;
 
         String activity;
